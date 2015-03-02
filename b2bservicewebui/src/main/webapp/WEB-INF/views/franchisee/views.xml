@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="welcomeFran" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/welcomeFran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="telecomRechargeFran" extends="baseLayout">
+		<put-attribute name="title" value="Telecom Recharge" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/telecomRechargeFran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="rechargeDetailFran" extends="baseLayout">
+		<put-attribute name="title" value="Recharge Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargeDetailFran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="dthtvFran" extends="baseLayout">
+		<put-attribute name="title" value="DTH-TV Recharge" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/dthtvFran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="rechargedetaildth" extends="baseLayout">
+		<put-attribute name="title" value="Recharge Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargedetaildth.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="datacardFran" extends="baseLayout">
+		<put-attribute name="title" value="Data Card Recharge" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/datacardFran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="datacardrechargedetail" extends="baseLayout">
+		<put-attribute name="title" value="Recharge Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/datacardrechargedetail.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="accountstatement" extends="baseLayout">
+		<put-attribute name="title" value="Account Statement" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/accountstatement.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="rechargehistory" extends="baseLayout">
+		<put-attribute name="title" value="Account Statement" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargehistory.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="historicalrechargehistory" extends="baseLayout">
+		<put-attribute name="title" value="Account Statement" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/historicalrechargehistory.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="postpaidbill" extends="baseLayout">
+		<put-attribute name="title" value="PostPaid Bill Payment" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/postpaidbill.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="postpaidbillsuccess" extends="baseLayout">
+		<put-attribute name="title" value="PostPaid Bill Payment" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/postpaidbillsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="landline" extends="baseLayout">
+		<put-attribute name="title" value="Land Line Bill Payment" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/landlinebill.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="landlinebillsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Land Line Bill Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/landlinesuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="electricitybill" extends="baseLayout">
+		<put-attribute name="title" value="Electricity Bill Payment" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/electricitybill.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="electricitybillsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Electricity Bill Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/electricitybillsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+
+	<definition name="rechargehistory" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargehistory.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="changepasswordfran" extends="baseLayout">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/changepasswordfran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="landlinebill" extends="baseLayout">
+		<put-attribute name="title" value="LandLine Bill" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/landlinebill.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="electricitybill" extends="baseLayout">
+		<put-attribute name="title" value="Electricity Bill" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/electricitybill.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="fundtransferfran" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/fundtransferfran.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="activityhistory" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/activityhistory.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="refundreport" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/refundreport.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="cashdepositrequestfran" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/cashdepositrequest.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="tidreceipt" extends="baseLayout">
+		<put-attribute name="title" value="TID Receipt" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/printtidreceit.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="printtidreceipt" extends="baseLayout">
+		<put-attribute name="title" value="TID Receipt" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/transactionDetails.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="franchiseeError" extends="baseLayout">
+		<put-attribute name="title" value="System Error" />
+		<put-attribute name="body" value="/WEB-INF/tiles/errorbody.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="successpagefran" extends="baseLayout">
+		<put-attribute name="title" value="System Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/successpage.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="refundrequest" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/refundrequest.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="refundrequest" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/refundrequest.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="insuranceinstallment" extends="baseLayout">
+		<put-attribute name="title" value="Insurance Bill" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/insuranceinstallment.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="insuranceinstallmentsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Insurance success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/insuranceinstallmentsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+
+	<definition name="gasbill" extends="baseLayout">
+		<put-attribute name="title" value="Gas Bill" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/gasbill.jsp" />
+
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="gasbillsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Gas Bill Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/gasbill.jsp" />
+
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="refundlistsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Refund List Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/refundlistsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="refundlistdetails" extends="baseLayout">
+		<put-attribute name="title" value="Refund List Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/refundlistdetail.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="commisondetails" extends="baseLayout">
+		<put-attribute name="title" value="Commision Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/retailercommisondetails.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="newdthconnection" extends="baseLayout">
+		<put-attribute name="title" value="New Dth Connetion" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/dthnewconnection.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="dthconnectionsuccess" extends="baseLayout">
+		<put-attribute name="title" value="New Dth Connetion Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/dthconnectionsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="licpremium" extends="baseLayout">
+		<put-attribute name="title" value="LIC PREMIUM" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/licpremium.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="licpremiumsuccess" extends="baseLayout">
+		<put-attribute name="title" value="LIC PREMIUM SUCCESS" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/licpremiumsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="licpremiumreportlist" extends="baseLayout">
+		<put-attribute name="title" value="LIC PREMIUM SUCCESS" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/licpremiumreportlist.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+
+	<definition name="earningperdayandmonth" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Earning" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/earningperdayandmonth.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="cashcardregister" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Earning" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/icashcardcreation.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="rechargedetailicash" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Earning" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargedetailicash.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="icashcardrecharge" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Earning" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/icashcardrecharge.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="rechargedetailicashcard" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Earning" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/rechargedetailicashcard.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="failurefran" extends="baseLayout">
+		<put-attribute name="title" value="Show Failure" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/employee/failure.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="waterbill" extends="baseLayout">
+		<put-attribute name="title" value="Water Bill" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/waterbill.jsp" />
+
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="waterbillsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Water Bill Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/waterbillsuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="moneytransferhome" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/moneytransferhome.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="registrationotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/registrationotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="loginenterotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/loginenterotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="forgotpin" extends="baseLayout">
+		<put-attribute name="title" value="forgot pin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/forgotpin.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="remittanceotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/remittanceotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="remittanceotp" extends="baseLayout">
+		<put-attribute name="title" value="Remittance otp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/remittanceotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+	<definition name="moneytransferregistration" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/moneytransferregistration.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="enterOTP" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/enterOTP.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="beneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/beneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="enterremitanceotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/enterremitanceotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="addbeneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/addbeneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="verifyaddbeneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/verifyaddbeneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="viewbeneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/viewbeneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="removebeneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/removebeneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="verifyremovebeneficiary" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/verifyremovebeneficiary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="checksenderbalance" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/checksenderbalance.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="reloadWallet" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/reloadwallet.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="fundtransfergetotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/fundtransfertransaction.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="fundtransferotp" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/fundtransferotp.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+
+
+	<definition name="fundtransfertransaction" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/fundtransfertransaction.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="moneytransferhistory" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/moneytransferhistory.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="upgradesender" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/upgradesender.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+	<definition name="showdetails" extends="baseLayout">
+		<put-attribute name="title" value="User registration for remittance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/franchisee/showdetails.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/franchisee/menuFran.jsp" />
+	</definition>
+</tiles-definitions>

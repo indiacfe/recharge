@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx.xsd">	
+	
+	<context:component-scan base-package="com.cfeindia.b2bserviceapp" />
+	
+	<tx:annotation-driven />
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/b2bserviceappdb?zeroDateTimeBehavior=convertToNull" />
+		<property name="username" value="b2bserviceuser" />
+		<property name="password" value="@b2bProd1#05" />
+		
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.cfeindia.b2bserviceapp.common.thirdparty.ThirdPartyDetailObject</value>
+				<value>com.cfeindia.b2bserviceapp.entity.FranchiseeCurrBal</value>
+				<value>com.cfeindia.b2bserviceapp.entity.UserDetail</value>
+				<value>com.cfeindia.b2bserviceapp.entity.UserRole</value>
+				<value>com.cfeindia.b2bserviceapp.entity.DistributorCurrbal</value>
+				<value>com.cfeindia.b2bserviceapp.entity.DistributorCommision</value>
+				<value>com.cfeindia.b2bserviceapp.entity.CompanyBalance</value>
+				<value>com.cfeindia.b2bserviceapp.entity.CompanyDistributorTransactionLog</value>
+				<value>com.cfeindia.b2bserviceapp.entity.Users</value>
+				<value>com.cfeindia.b2bserviceapp.entity.CompanyOperatorComission</value>
+				<value>com.cfeindia.b2bserviceapp.transport.bean.TransactionTransportBean</value>
+				<value>com.cfeindia.b2bserviceapp.entity.MasterData</value>
+				<value>com.cfeindia.b2bserviceapp.common.thirdparty.ThirdPartyServiceProvider</value>
+				<value>com.cfeindia.b2bserviceapp.thirdparty.operators.ThirdpartyOperatorList</value>
+				<value>com.cfeindia.b2bserviceapp.entity.DistributorBalanceTransferLog</value>
+				<value>com.cfeindia.b2bserviceapp.entity.FranchiseeBalanceTransferLog</value>
+				<value>com.cfeindia.b2bserviceapp.entity.NewIdCreationBalanceLog</value>
+				<value>com.cfeindia.b2bserviceapp.entity.Circle</value>
+				<value>com.cfeindia.b2bserviceapp.entity.FranchiseeCashDepositRequest</value>
+				<value>com.cfeindia.b2bserviceapp.entity.CompanyBalTransactionLog</value>
+				<value>com.cfeindia.b2bserviceapp.entity.FranchiseeRefundRequests</value>
+			</list>
+
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="payworld" class="com.cfeindia.b2bserviceapp.thirdparty.recharge.impl.PayWorldETransactionServiceImpl"/>
+	<bean id="instantpay" class="com.cfeindia.b2bserviceapp.thirdparty.recharge.impl.InstaPayETransactionServiceImpl"/>
+	<bean id="goprocess" class="com.cfeindia.b2bserviceapp.thirdparty.recharge.impl.GoProcessETransactionServiceImpl"/>
+	<bean id="cyberplate" class="com.cfeindia.b2bserviceapp.thirdparty.recharge.impl.CyberplatETransactionServiceImpl"/>
+</beans>

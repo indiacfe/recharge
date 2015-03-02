@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CyberTel India</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/b2b/dthRecharge.js"></script>
+<script type="text/javascript" src="js/phonegap/cordova-2.7.0.js"></script>
+<script type="text/javascript" src="js/b2b/b2bcommon.js"></script>
+</head>
+
+<body onload="setCurrentBalance()" class="body">
+	<script type="text/javascript">
+		document.addEventListener("deviceready", pageLoading, false);
+		function dthRechargeForm() {
+			var validated = (contactVali() && confirmation());
+			if (validated) {
+				doDthRecharge();
+
+			}
+			return false;
+		}
+		function confirmation() {
+			var rechargeType = document.getElementById("rechargeType").value;
+			var operator = document.getElementById("operator").value;
+			var mobNo = document.getElementById("connectionid").value;
+			var rAmount = document.getElementById("amount").value;
+			var con = confirm("Recharge type: "
+					+ rechargeType
+					+ "\n\nOperator: "
+					+ operator
+					+ "\n\nConnection ID.: "
+					+ mobNo
+					+ "\n\nAmount: "
+					+ rAmount
+					+ "\n\nAre you sure you want to recharge the above mobile no.?");
+			if (con == true) {
+				return true;
+			} else {
+
+				return false;
+			}
+		}
+		function contactVali() {
+			var connection = document.getElementById("connectionid").value;
+			var amt = document.getElementById("amount").value;
+			var operator = document.getElementById("operator").value;
+			if (connection == null || connection == "") {
+				alert("pls enter ConnectionID.");
+				document.getElementById("connectionid").focus();
+				return false;
+			} else if (connection.length < 10) {
+				alert("pls enter the correct Connection ID");
+				document.getElementById("connectionid").focus();
+				return false;
+			}
+
+			if (amt == null || amt == "") {
+				alert("Please enter amount");
+				return false;
+			}
+			if (operator == -1) {
+				alert("pls select the operator");
+				document.getElementById("cname").focus();
+				return false;
+			}
+			return true;
+
+		}
+	</script>
+
+	<!-- Home -->
+	<div data-role="page" id="page1">
+		<div class="header">
+			<a href="menu.html" class="left_bt">Home</a> <span>DTH
+				Recharge</span>
+		</div>
+		<div class="form_row">
+			<font color="black"> <label>Current Balance:</label> <input
+				id="currentBalance" readonly class="form_input_box" type="text" />
+			</font>
+		</div>
+		<form id="dthtv" action="" method="post"
+			onsubmit="return dthRechargeForm()">
+			<div class="search_panel_box">
+				<div id="errorMessage" style="color: red; left-padding: 80px;"></div>
+				<div class="form_row">
+					<label>Recharge Type</label> <select id="rechargeType"
+						class="form_select" name="rechargeType">
+						<option value="DTH">DTH</option>
+
+					</select>
+				</div>
+				<!-- div class="form_row">
+				<label>Type</label>
+				<select id="type" name="type">
+					<option value="pinless">PinLess</option>
+				</select>
+			</div -->
+
+				<div class="form_row">
+					<label>Select Operator</label> <select id="operator"
+						class="form_select" name="operator">
+						<option value="DISH TV">DISH TV</option>
+						<option value="RELIANCE DIGITAL TV">RELIANCE DIGITAL TV</option>
+						<option value="SUN DIRECT">SUN DIRECT</option>
+						<option value="VIDEOCON D2H">VIDEOCON D2H</option>
+						<option value="AIRTEL DIGITAL TV">AIRTEL DIGITAL TV</option>
+						<option value="TATA SKY">TATA SKY</option>
+
+					</select>
+				</div>
+				<div class="form_row">
+					<label>DTH-ID No.</label> <input id="connectionid"
+						class="form_input_box" name="connectionid" class="inputfield"
+						required="required" type="text" value="" />
+				</div>
+				<div class="form_row">
+					<label>Amount (Rs.)</label> <input id="amount" name="amount"
+						class="form_input_box" required="required" type="text" value="" />
+				</div>
+				<input type="submit" name="submit" class="form_submit"
+					value="Recharge" />
+			</div>
+
+
+		</form>
+</body>
+</html>

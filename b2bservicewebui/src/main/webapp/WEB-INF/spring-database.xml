@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/b2bserviceappdb" />
+		<property name="username" value="b2bserviceuser" />
+		<property name="password" value="@b2bProd1#05" />
+		
+	</bean>
+	<bean id="dataSourceOld"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/b2bserviceappdbold" />
+		<property name="username" value="b2bserviceuser" />
+		<property name="password" value="@b2bProd1#05" />
+		
+	</bean>
+
+</beans>

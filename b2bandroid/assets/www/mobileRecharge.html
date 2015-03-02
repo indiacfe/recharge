@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/b2b/telecomRecharge.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/phonegap/cordova-2.7.0.js"></script>
+<script type="text/javascript" src="js/b2b/b2bcommon.js"></script>
+<title>Telecom Recharge</title>
+</head>
+<body onload="setCurrentBalance()" class="body">
+	<script type="text/javascript">
+		document.addEventListener("deviceready", pageLoading, false);
+		var $ = jQuery.noConflict();
+		$(function() {
+			$('#boxclose').click(function() {
+				$('#box').animate({
+					'top' : '-400px'
+				}, 500);
+			});
+			$('#activator_login').click(function() {
+				$('#box_login').animate({
+					'top' : '65px'
+				}, 500);
+			});
+			$('#boxclose_login').click(function() {
+				$('#box_login').animate({
+					'top' : '-400px'
+				}, 500);
+			});
+		});
+		$(document).ready(function() {
+			$(".toggle_container").hide();
+			$(".trigger").click(function() {
+				$(this).toggleClass("active").next().slideToggle("slow");
+				return false;
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		function telecomRechargeForm() {
+			var validated = (contactVali() && confirmation());
+			if (validated) {
+				doTelecomRecharge();
+
+			}
+			return false;
+		}
+		function confirmation() {
+			var rechargeType = document.getElementById("rechargeType").value;
+			var operator = document.getElementById("cname").value;
+			var mobNo = document.getElementById("mobileNo").value;
+			var rAmount = document.getElementById("amount").value;
+			var con = confirm("Recharge type: "
+					+ rechargeType
+					+ "\n\nOperator: "
+					+ operator
+					+ "\n\nMobile No.: "
+					+ mobNo
+					+ "\n\nAmount: "
+					+ rAmount
+					+ "\n\nAre you sure you want to recharge the above mobile no.?");
+			if (con == true) {
+				return true;
+			} else {
+
+				return false;
+			}
+		}
+		function contactVali() {
+			var connection = document.getElementById("mobileNo").value;
+			var amt = document.getElementById("amount").value;
+			var operator = document.getElementById("cname").value;
+			if (connection == null || connection == "") {
+				alert("pls enter a Number in Mobile no.");
+				document.getElementById("mobileNo").focus();
+				return false;
+			} else if (connection.length != 10) {
+				alert("pls enter the length 10 digit Integer Number");
+				document.getElementById("mobileNo").focus();
+				return false;
+			}
+
+			if (amt == null || amt == "") {
+				alert("Please enter amount");
+				return false;
+			}
+			if (operator == -1) {
+				alert("pls select the operator");
+				document.getElementById("cname").focus();
+				return false;
+			}
+			return true;
+
+		}
+	</script>
+
+
+	<div id="search_panel1">
+
+		<div class="header">
+			<a href="menu.html" class="left_bt">Home</a> <span>Mobile
+				Recharge</span>
+		</div>
+		<div class="form_row">
+			<font color="black"> <label>Current Balance:</label> <input
+				id="currentBalance" readonly class="form_input_box" type="text" />
+			</font>
+		</div>
+		<form id="telecomrecharge" onSubmit="return telecomRechargeForm()"
+			action="" method="post">
+			<div style="color: red; left-padding: 80px;"></div>
+			<br />
+			<div class="form_row" style="display: none">
+				<select id="rechargeType" class="form_select" name="rechargeType">
+					<option value="MOBILE_PREPAID">Mobile</option>
+				</select>
+			</div>
+
+
+			<div class="form_row">
+				<label>Mobile Operator</label> <select id="cname"
+					class="form_select" name="operator" class="menu ul li"
+					onchange="getCircleName(); return false;">
+					<option selected="selected" value="-1">Select</option>
+					<option value="AIRTEL">AIRTEL</option>
+					<option value="AIRCEL">AIRCEL</option>
+					<option value="BSNL - SPECIAL TARIFF">BSNL - SPECIAL
+						TARIFF</option>
+					<option value="BSNL - TALKTIME">BSNL - TALKTIME</option>
+					<option value="IDEA">IDEA</option>
+					<option value="LOOP MOBILE">LOOP MOBILE</option>
+					<option value="MTNL DELHI SPECIAL">MTNL DELHI SPECIAL</option>
+					<option value="MTNL DELHI TALKTIME">MTNL DELHI TALKTIME</option>
+					<option value="MTNL MUMBAI SPECIAL">MTNL MUMBAI SPECIAL</option>
+					<option value="MTNL MUMBAI TALKTIME">MTNL MUMBAI TALKTIME</option>
+					<option value="MTS">MTS</option>
+					<option value="T24 MOBILE-SPECIAL TARIFF">T24
+						MOBILE-SPECIAL TARIFF</option>
+					<option value="T24 MOBILE-TALKTIME">T24 MOBILE-TALKTIME</option>
+					<option value="TATA DOCOMO CDMA">TATA DOCOMO CDMA</option>
+					<option value="TATA DOCOMO GSM-SPECIAL T">TATA DOCOMO
+						GSM-SPECIAL T</option>
+					<option value="TATA DOCOMO GSM-TALKTIME">TATA DOCOMO
+						GSM-TALKTIME</option>
+					<option value="UNINOR-SPECIAL TARIFF">UNINOR-SPECIAL
+						TARIFF</option>
+					<option value="UNINOR-TALKTIME">UNINOR-TALKTIME</option>
+					<option value="VODAFONE">VODAFONE</option>
+					<option value="RELIANCE GSM">RELIANCE GSM</option>
+					<option value="TATA_WALKY">TATA_WALKY</option>
+					<option value="NORTON MOBILE">NORTON MOBILE</option>
+					<option value="RELIANCE CDMA">RELIANCE CDMA</option>
+
+
+
+				</select>
+			</div>
+
+			<br></br>
+			<div class="form_row">
+				<label>Mobile No.</label> <input id="mobileNo" name="mobileNo"
+					class="form_input_box" type="text" />
+			</div>
+			<br></br>
+			<div class="form_row">
+				<label>Amount (Rs.)</label> <input id="amount" name="amount"
+					class="form_input_box" type="text" />
+			</div>
+			<br></br> <input type="submit" name="submit" class="form_submit"
+				value="Recharge" />
+			<div style="visibility: hidden">
+				<select id="selcircle" name="circleCode"></select>
+			</div>
+		</form>
+
+		<script type="text/javascript">
+			function clearAmount() {
+				document.getElementById("amount").value = "";
+			}
+			clearAmount();
+		</script>
+
+	</div>
+</body>
+</html>

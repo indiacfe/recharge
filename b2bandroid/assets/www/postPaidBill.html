@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/b2b/postpaidbill.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/phonegap/cordova-2.7.0.js"></script>
+<script type="text/javascript" src="js/b2b/b2bcommon.js"></script>
+<title>Post Paid Bill Payment</title>
+</head>
+<body onload="setCurrentBalance()" class="body">
+	<script type="text/javascript">
+		document.addEventListener("deviceready", pageLoading, false);
+		function postPaidRechargeForm() {
+			var validated = (contactVali() && confirmation());
+			if (validated) {
+				doPostPaidBillPay();
+
+			}
+			return false;
+		}
+		function confirmation() {
+			var operator = document.getElementById("operator").value;
+			var mobNo = document.getElementById("mobileNo").value;
+			var rAmount = document.getElementById("amount").value;
+			var con = confirm("Operator: "
+					+ operator
+					+ "\n\n Mobile no Or Phone Number.: "
+					+ mobNo
+					+ "\n\nAmount: "
+					+ rAmount
+					+ "\n\nAre you sure you want to pay bill for the above mobile no. or phone no.?");
+			if (con == true) {
+				return true;
+			} else {
+
+				return false;
+			}
+		}
+		function contactVali() {
+			var connection = document.getElementById("mobileNo").value;
+			var amt = document.getElementById("amount").value;
+			var operator = document.getElementById("operator").value;
+			if (connection == null || connection == "") {
+				alert("pls enter a Mobile number.");
+				document.getElementById("mobileNo").focus();
+				return false;
+			} else if (connection.length != 10) {
+				alert("pls enter length 10 digit mobile number or phone number");
+				document.getElementById("mobileNo").focus();
+				return false;
+			}
+
+			if (amt == null || amt == "") {
+				alert("Please enter amount");
+				return false;
+			}
+			if (operator == -1) {
+				alert("pls select the operator");
+				document.getElementById("cname").focus();
+				return false;
+			}
+			return true;
+
+		}
+
+	</script>
+
+
+	<div id="search_panel1">
+
+		<div class="header">
+			<a href="menu.html" class="left_bt">Home</a> <span>PostPaid Bill Pay</span>
+		</div>
+		<div class="form_row">
+			<font color="black"> <label>Current Balance:</label> <input
+				id="currentBalance" readonly class="form_input_box" type="text" />
+			</font>
+		</div>
+
+		<form id="postpaidbillform" onSubmit="return postPaidRechargeForm()"
+			action="" method="post">
+			<div style="color: red; left-padding: 80px;"></div>
+			<br />
+
+
+			<div class="form_row">
+				<label>Operator</label> <select id="operator" class="form_select"
+					name="operator">
+					<option selected="selected" value="-1">Select</option>
+					<option value="AIRTEL">AIRTEL</option>
+					<option value="IDEA">IDEA</option>
+					<option value="MTNL DELHI">MTNL DELHI</option>
+					<option value="RELIANCE CDMA">RELIANCE CDMA</option>
+					<option value="RELIANCE GSM">RELIANCE GSM</option>
+					<option value="TATA DOCOMO CDMA">TATA DOCOMO CDMA</option>
+					<option value="TATA DOCOMO GSM">TATA DOCOMO GSM</option>
+					<option value="VODAFONE">VODAFONE</option>
+				</select>
+			</div>
+			<br />
+			<div class="form_row">
+				<label>Mobile Number or Phone Number</label> <input
+					id="mobileNo" name="mobileNo" class="form_input_box"
+					type="text" required="required" type="text" value="" />
+			</div>
+			<br />
+			<div class="form_row">
+				<label>Amount (Rs.)</label> <input id="amount" name="amount"
+					class="form_input_box" type="text" required="required" type="text"
+					value="" />
+			</div>
+			<input type="submit" name="submit" class="form_submit"
+				value="Pay Now" />
+				
+		</form>
+	</div>
+
+	</div>
+</body>
+</html>

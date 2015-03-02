@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="adminHome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/adminhome.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="updateAdmin" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/updateutility.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="successAdmin" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/successupdate.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="failureAdmin" extends="baseLayout">
+		<put-attribute name="title" value="There was a Failure" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/failure.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="registrationadmin" extends="baseLayout">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/registration.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="sucesspageadmin" extends="baseLayout">
+		<put-attribute name="title" value="Sussfully Registered" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/registrationsucess.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="AdminError" extends="baseLayout">
+		<put-attribute name="title" value="System Error" />
+		<put-attribute name="body" value="/WEB-INF/tiles/errorbody.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="changepasswordadmin" extends="baseLayout">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/changepasswordadmin.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="successpageadmin" extends="baseLayout">
+		<put-attribute name="title" value="System Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/successpage.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="searchdistributorpage" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/searchdistributorpage.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="distributorResultHome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/distributorResultHome.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="distributorTransferSuccessAdmin" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/distributorTransferSucess.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="companyoperatorcommission" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/companyoperatorcommission.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="historicaldata" extends="baseLayout">
+		<put-attribute name="title"
+			value="Distributors/ Historical Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/historicaldata.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="historicaldatareport" extends="baseLayout">
+		<put-attribute name="title"
+			value="Distributors/Historical Recharge History Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/historicaldatareport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="historicalmergedata" extends="baseLayout">
+		<put-attribute name="title"
+			value="Distributors/Historical Merge Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/historicalmergedata.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="thirdpartyserviceprovider" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/thirdpartyserviceprovider.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="cashdepositrequestsadmin" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cashdepositrequests.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="searchtransactionid" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/searchtransactionid.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="users" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/users.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="customers" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/customers.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="allrefundrequestsadmin" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/allrefundrequestsadmin.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="adminfundtransfer" extends="baseLayout">
+		<put-attribute name="title" value="Fund Transfer Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/fundtransferreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="historicaladminfundtransfer" extends="baseLayout">
+		<put-attribute name="title" value="Historical Fund Transfer Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/historicalfundtransferreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="alldistributorsandretailers" extends="baseLayout">
+		<put-attribute name="title" value="Distributors/Retailers List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/alldistributorsandretailers.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="rechargehistoryreport" extends="baseLayout">
+		<put-attribute name="title" value="Distributors/Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/rechargehistoryreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="edituser" extends="baseLayout">
+		<put-attribute name="title" value="Distributors/Recharge History" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/edituser.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="deductamountfranpage" extends="baseLayout">
+		<put-attribute name="title" value="Deduction" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/reduceamountfran.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="deductamountdistpage" extends="baseLayout">
+		<put-attribute name="title" value="Deduction" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/reduceamountdist.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="deductamountsuccess" extends="baseLayout">
+		<put-attribute name="title" value="Deduction success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/successpage.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="retailerbydist" extends="baseLayout">
+		<put-attribute name="title" value="Retailers List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/retailersbydist.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="retailerslist" extends="baseLayout">
+		<put-attribute name="title" value="Retailer List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/retailerslist.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="addretailertofranchisee" extends="baseLayout">
+		<put-attribute name="title" value="Add/Remove Franchisee " />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/addretailertofranchisee.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="notice" extends="baseLayout">
+		<put-attribute name="title" value="Notice" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/notice.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="activeinactivenotice" extends="baseLayout">
+		<put-attribute name="title" value="Active/Inactive Notice " />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/activeinactivenotice.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="smsdetails" extends="baseLayout">
+		<put-attribute name="title" value="Recharge Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/smsrechargedetails.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="outletconfigpage1" extends="baseLayout">
+		<put-attribute name="title" value="Outletconfig" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/outletconfigpage1.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="outletconfigpage2" extends="baseLayout">
+		<put-attribute name="title" value="Outletconfig" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/outletconfigpage2.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="licpremiumdetails" extends="baseLayout">
+		<put-attribute name="title" value="Lic Premium Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/licpremiumdetails.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="dayreport" extends="baseLayout">
+		<put-attribute name="title" value="Day Base Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/dailyreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="franchiseedayreportdetails" extends="baseLayout">
+		<put-attribute name="title" value="Day Base Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/franchiseetransreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="totalfundtransferreport" extends="baseLayout">
+		<put-attribute name="title" value="Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/totalfundtransferreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+
+	<definition name="registrationapi" extends="baseLayout">
+		<put-attribute name="title" value="API Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/apiregistration.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="apisucesspageadmin" extends="baseLayout">
+		<put-attribute name="title" value="API Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/apiregistrationsuccess.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+
+	<definition name="searchcustomerpage" extends="baseLayout">
+		<put-attribute name="title" value="Customer Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/searchacustomer.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="customerResultHome" extends="baseLayout">
+		<put-attribute name="title" value="Customer Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerResultHome.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="customerTransferSuccessAdmin" extends="baseLayout">
+		<put-attribute name="title" value="Customer Transfer Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerTransferSuccess.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="searchcustomertransactionid" extends="baseLayout">
+		<put-attribute name="title" value="Customer Search Transaction" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerrefunfrequests.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="allCustomerRefundRequest" extends="baseLayout">
+		<put-attribute name="title" value="Customer Search Transaction" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/allCustomerRefundRequest.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="customercommission" extends="baseLayout">
+		<put-attribute name="title" value="customer  update commission" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customercommission.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="commisionpercustomer" extends="baseLayout">
+		<put-attribute name="title" value="customer  update commission" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerscommdetails.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="apiFundTransferReport" extends="baseLayout">
+		<put-attribute name="title" value="Customer Fund Transfer Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerFundTransferReport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="customerRechargeReport" extends="baseLayout">
+		<put-attribute name="title" value="Customer Fund Transfer Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customerrechargereport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="mergerechargehistoryreport" extends="baseLayout">
+		<put-attribute name="title" value="Distributors/Recharge History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/mergerechargehistoryreport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="airtelUser" extends="baseLayout">
+		<put-attribute name="title" value="Add Airtel User" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/airteluserregisteration.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+	<definition name="searchretailer" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/searchretailer.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="retailerResultHome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/retailerResultHome.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	<definition name="deductamountapi" extends="baseLayout">
+		<put-attribute name="title" value="Deduct Amount API" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/reduceamountapi.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	
+	<definition name="rejectedrefundrequest" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/rejectedrefundrequest.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	
+	<definition name="operatorwiserechargereport" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/operatorwiserechargereport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+	
+	<definition name="electricityrechargereport" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/electricityrechargereport.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/admin/menuadmin.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords"
+	content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>CyberTel India</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/phonegap/cordova-2.7.0.js"></script>
+<script type="text/javascript" src="js/b2b/b2bcommon.js"></script>
+<script type="text/javascript" src="js/b2b/loginFlow.js"></script>
+<script type="text/javascript" src="js/b2b/loginCodeEncription.js"></script>
+
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	document.addEventListener("deviceready", pageLoading, false);
+	function b2bLogin() {
+		var validated = loginValidation();
+		if (validated) {
+			b2bUserLogin();
+		}
+	}
+	function loginValidation() {
+		var userName = document.getElementById("loginUserNameId").value;
+		var passWord = document.getElementById("loginPasswordId").value;
+		if (userName == null || userName == "") {
+			alert("pls enter your UserName.");
+			document.getElementById("loginUserNameId").focus();
+			return false;
+		} else if (userName.length != 10) {
+			alert("pls enter the length 10 digit UserName");
+			document.getElementById("loginUserNameId").focus();
+			return false;
+		}
+
+		if (passWord == null || passWord == "") {
+			alert("Please enter your password");
+			return false;
+		}
+		return true;
+	}
+	var $ = jQuery.noConflict();
+	$(function() {
+		$('#boxclose').click(function() {
+			$('#box').animate({
+				'top' : '-400px'
+			}, 500);
+		});
+		$('#activator_login').click(function() {
+			$('#box_login').animate({
+				'top' : '65px'
+			}, 500);
+		});
+		$('#boxclose_login').click(function() {
+			$('#box_login').animate({
+				'top' : '-400px'
+			}, 500);
+		});
+	});
+	$(document).ready(function() {
+		$(".toggle_container").hide();
+		$(".trigger").click(function() {
+			$(this).toggleClass("active").next().slideToggle("slow");
+			return false;
+		});
+	});
+</script>
+<script type="text/javascript">
+	window.addEventListener("load", function() {
+		// Set a timeout...
+		setTimeout(function() {
+			// Hide the address bar!
+			window.scrollTo(0, 1);
+		}, 0);
+	});
+</script>
+</head>
+
+<body>
+	<div id="main_container">
+
+
+		<div id="errorMessageBlock"></div>
+		<br></br> <br></br> <br></br> <br></br>
+		<div align="center">
+			<a href="index.html"><img src="images/cyber-2.png" alt=""
+				title="" border="0" /></a>
+		</div>
+		<div class="box" id="box_login">
+			<div class="box_content">
+				<div class="box_content_tab">Login</div>
+
+				<div class="box_content_center">
+					<div class="form_content">
+						<form action="#">
+							<label>Username</label> <input type="text" id="loginUserNameId" 
+							 class="form_input_box" /> <label>Password</label>
+							<input id="loginPasswordId" type="password" 
+								class="form_input_box" /> <a class="boxclose"
+								id="boxclose_login">Close</a> <input type="button"
+								class="form_submit" value="Login" onclick="b2bLogin()" />
+						</form>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#" id="activator_login"><img
+						src="images/icon1.png" border="0" alt="" title="" />Login</a></li>
+				<li><a href="about.html"><img src="images/icon5.png"
+						border="0" alt="" title="" />About Us</a></li>
+				<li><a href="contact.html"><img src="images/icon6.png"
+						border="0" alt="" title="" />Contact Us</a></li>
+			</ul>
+		</div>
+
+
+	</div>
+</body>
+</html>

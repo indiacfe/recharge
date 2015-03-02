@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="Get in the spotlight" />
+<meta name="keywords"
+	content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+<title>My mobile page V2</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	var $ = jQuery.noConflict();
+	$(document).ready(function() {
+		$(".toggle_container").hide();
+		$(".trigger").click(function() {
+			$(this).toggleClass("active").next().slideToggle("slow");
+			return false;
+		});
+
+	});
+</script>
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	window.addEventListener("load", function() {
+		// Set a timeout...
+		setTimeout(function() {
+			// Hide the address bar!
+			window.scrollTo(0, 1);
+		}, 0);
+	});
+</script>
+</head>
+
+<body>
+	<div id="main_container">
+		<div class="header">
+			<a href="index.html" class="left_bt">home</a> <span>Contact Us</span>
+		</div>
+
+		<div class="content">
+
+			<div class="corner_wrap">
+
+				<div class="entry">
+					<h3>Let's get in touch!</h3>
+					<img src="images/contactus.jpg" alt="" title="" border="0" />
+					<div class="contact_info">
+						<ul>
+							<li>Call Us: +91 9310858478, +91 9811905405</li>
+							<li>Website: <a href="http://cybertelindia.com">www.cybertelindia.com</a>
+							</li>
+							<li>Email: <a href="#">info@cybertelindia.com</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="shadow_wrap"></div>
+
+			<div class="toogle_wrap">
+				<div class="trigger">
+					<a href="#">Send a message</a>
+				</div>
+				<div class="toggle_container">
+					<div class="form_content">
+						<form>
+							<label>Name:</label> <input type="text" class="form_input" /> <label>Email:</label>
+							<input type="text" class="form_input" /> <label>Phone:</label> <input
+								type="text" class="form_input" /> <label>Message:</label>
+							<textarea class="form_textarea"></textarea>
+							<input type="submit" class="form_submit_right" value="Submit" />
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="shadow_wrap"></div>
+
+			<div class="clear_left"></div>
+
+
+		</div>
+
+
+	</div>
+	<div id="footer">
+		<h5>Copyright © 2013 CYBERTEL INDIA | Developed by CFE INDIA</h5>
+	</div>
+</body>
+</html>

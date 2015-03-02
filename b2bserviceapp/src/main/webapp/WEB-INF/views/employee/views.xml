@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+<definition name="employeeHome" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Employee"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/employeeHome.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+      <definition name="searchDistributorPage" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Employee"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/searchdistributorpage.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+      <!-- <definition name="distributorResultHome" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Employee"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/distributorResultHome.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition> -->
+
+      <definition name="distributorTransferSuccess" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Employee"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/distributorTransferSucess.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+ <definition name="update" extends="baseLayout">
+      <put-attribute name="title"  value="Update"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/updateutility.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+       <definition name="success" extends="baseLayout">
+      <put-attribute name="title"  value="Show Success"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/successupdate.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+ <definition name="failure" extends="baseLayout">
+      <put-attribute name="title"  value="Show Failure"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/failure.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+ <definition name="employeeError" extends="baseLayout">
+      <put-attribute name="title"  value="System Error"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/errorbody.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+ <definition name="sucesspageregemp" extends="baseLayout">
+      <put-attribute name="title"  value="Successfully Registered"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/registrationsucess.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition> 
+
+<definition name="registrationemp" extends="baseLayout">
+      <put-attribute name="title"  value="Registration Form"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/registration.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+<definition name="changepasswordemp" extends="baseLayout">
+      <put-attribute name="title"  value="Change Password"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/changepasswordemployee.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+<definition name="successpageemp" extends="baseLayout">
+      <put-attribute name="title"  value="Change Password"/>
+      <put-attribute name="body"   value="/WEB-INF/views/employee/successpage.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/employee/menuemployee.jsp"/>  
+</definition>
+
+</tiles-definitions>

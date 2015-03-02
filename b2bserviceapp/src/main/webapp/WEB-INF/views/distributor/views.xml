@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="distributorHome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Distributor" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/distributorHome.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+
+
+	<definition name="registration" extends="baseLayout">
+		<put-attribute name="title" value="Registration Form" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/registration.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="fundtransfer" extends="baseLayout">
+		<put-attribute name="title" value="Fund Transfer" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/fundtransferreport.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="transactionsummary" extends="baseLayout">
+		<put-attribute name="title" value="Transaction Summary" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/transactionsummary.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="changepassworddist" extends="baseLayout">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/changepassworddist.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="cashdepositdist" extends="baseLayout">
+		<put-attribute name="title" value="Cash Deposit Request" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/cashdepositrequestdist.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+
+	<definition name="sucesspage" extends="baseLayout">
+		<put-attribute name="title" value="Successfully Registered" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/registrationsucess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+	<definition name="franchiseetransfer" extends="baseLayout">
+		<put-attribute name="title" value="Transfer" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/franchiseetrans.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+	<definition name="franchiseeResultHome" extends="baseLayout">
+		<put-attribute name="title" value="Franchisee Result Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/franchiseeResultHome.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="franchiseeTransferSuccess" extends="baseLayout">
+		<put-attribute name="title" value="Transfer Success" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/franchiseeTransferSuccess.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="distributorError" extends="baseLayout">
+		<put-attribute name="title" value="System Error" />
+		<put-attribute name="body" value="/WEB-INF/tiles/errorbody.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+
+	<definition name="successpagedist" extends="baseLayout">
+		<put-attribute name="title" value="Success Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/successpage.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+	<definition name="transferadunit" extends="baseLayout">
+		<put-attribute name="title" value="Success Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/distributor/transferadunittob2b.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/distributor/menudist.jsp" />
+	</definition>
+	
+	<definition name="distcashdepositrequests" extends="baseLayout">
+      <put-attribute name="title"  value="Cash Deposit Requests"/>
+      <put-attribute name="body"   value="/WEB-INF/views/distributor/cashrequestsprocessfran.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/distributor/menudist.jsp"/>
+	</definition>
+		<definition name="cashrequestranspage" extends="baseLayout">
+      <put-attribute name="title"  value="Cash Deposit Requests"/>
+      <put-attribute name="body"   value="/WEB-INF/views/distributor/cashrequeststransferpage.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/distributor/menudist.jsp"/>
+	</definition>
+		<definition name="allcashdepositrequestsdist" extends="baseLayout">
+      <put-attribute name="title"  value="All Cash Deposit Requests"/>
+      <put-attribute name="body"   value="/WEB-INF/views/distributor/allcashdepositrequestsdist.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/distributor/menudist.jsp"/>
+	</definition>
+			
+</tiles-definitions>

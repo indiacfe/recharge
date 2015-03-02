@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+<definition name="adminHome" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/adminhome.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>
+
+<definition name="updateAdmin" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/updateutility.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>
+          
+<definition name="successAdmin" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/successupdate.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>
+   
+ <definition name="failureAdmin" extends="baseLayout">
+      <put-attribute name="title"  value="There was a Failure"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/failure.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>     
+
+  <definition name="registrationadmin" extends="baseLayout">
+      <put-attribute name="title"  value="Registration Page"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/registration.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>  
+
+<definition name="sucesspageadmin" extends="baseLayout">
+      <put-attribute name="title"  value="Sussfully Registered"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/registrationsucess.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>  
+ 
+ <definition name="AdminError" extends="baseLayout">
+      <put-attribute name="title"  value="System Error"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/errorbody.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition> 
+
+<definition name="changepasswordadmin" extends="baseLayout">
+      <put-attribute name="title"  value="Change Password"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/changepasswordadmin.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>
+
+<definition name="successpageadmin" extends="baseLayout">
+      <put-attribute name="title"  value="System Page"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/successpage.jsp"/>
+       <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>  
+</definition>
+
+      <definition name="searchdistributorpage" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/searchdistributorpage.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+      <definition name="distributorResultHome" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/distributorResultHome.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+      <definition name="distributorTransferSuccessAdmin" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/distributorTransferSucess.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+
+      <definition name="companyoperatorcommission" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/companyoperatorcommission.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+ <definition name="thirdpartyserviceprovider" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/thirdpartyserviceprovider.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+	
+  <definition name="cashdepositrequestsadmin" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/cashdepositrequests.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+ 
+<definition name="searchtransactionid" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/searchtransactionid.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+<definition name="users" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/users.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+<definition name="allrefundrequestsadmin" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome Admin"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/allrefundrequestsadmin.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+<definition name="adminfundtransfer" extends="baseLayout">
+      <put-attribute name="title"  value="Fund Transfer Report"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/fundtransferreport.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+<definition name="alldistributorsandretailers" extends="baseLayout">
+      <put-attribute name="title"  value="Distributors/Retailers List"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/alldistributorsandretailers.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+<definition name="rechargehistoryreport" extends="baseLayout">
+      <put-attribute name="title"  value="Distributors/Retailers List"/>
+      <put-attribute name="body"   value="/WEB-INF/views/admin/rechargehistoryreport.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/views/admin/menuadmin.jsp"/>
+</definition>
+
+</tiles-definitions>

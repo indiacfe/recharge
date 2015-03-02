@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+	<bean id="RechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminRechargeHistoryReport" />
+		
+	<bean id="MergeRechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminMergeRechargeReport" />
+		
+	<bean id="CashDepositReportSummary" class="com.cfeindia.b2bserviceapp.exelview.CashDepositReport" />
+	
+	<bean id="UserDetailSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminUserDetailsReport" />
+		
+	<bean id="FundTransferReportSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminFundTransferReport" />
+		
+	<bean id="AdminThirdPartyServiceProviderSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminThirdPartyServiceProvider" />
+		
+	<bean id="AdminCompanyOperatorCommSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminCompanyOperatorComm" />
+		
+	<bean id="AdminGenrateReportSummary" class="com.cfeindia.b2bserviceapp.exelview.AdminGenrateReport" />
+	
+	<bean id="AdminFundTransReportSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminTotalFundTransferReport" />
+		
+	<bean id="AdminDistAndRetailerSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminDistAndRetailer" />
+		
+	<bean id="AdminSMSRechargeReportSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminSMSRechargeReport" />
+		
+	<bean id="DistributorFundTransReportSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.DistributorFundTransReport" />
+		
+	<bean id="DistCashDepositSummary" class="com.cfeindia.b2bserviceapp.exelview.DistCashDeposit" />
+	
+	<bean id="RetailerAcStatementSummary" class="com.cfeindia.b2bserviceapp.exelview.RetailerAcStatement" />
+	
+	<bean id="RetailerRechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.RetailerRechargeHistory" />
+		
+	<bean id="RetailerRefundRequestListSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.RetailerRefundRequestList" />
+		
+		<bean id="RetailerCommissionSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.RetailerCommissionDetails" />
+		
+		<bean id="CustomerAcStatementSummary"
+		class="com.cfeindia.b2bserviceapp.exelview.CustomerAcStatement" />
+	
+		<bean id="CustomerRechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.CustomerRechargeHistoryReport" />
+		
+		<bean id="AdminOperatorWiseRechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.adminOperatorWiseRechargeReport" />
+		
+		<bean id="AdminElectricityRechargeHistorySummary"
+		class="com.cfeindia.b2bserviceapp.exelview.AdminElectricityReport" />
+		
+		
+</beans>

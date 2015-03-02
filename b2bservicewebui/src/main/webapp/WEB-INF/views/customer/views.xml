@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="customerhome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome Customer" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/customerhome.jsp" />
+	</definition>
+
+	<definition name="tokengenerator" extends="baseLayout">
+		<put-attribute name="title" value="Generate Token" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/customer/token.jsp" />
+	</definition>
+
+	<definition name="customerAccountStatement" extends="baseLayout">
+		<put-attribute name="title" value="Account Statement" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/accountStatement.jsp" />
+	</definition>
+
+	<definition name="customerRechargeHistory" extends="baseLayout">
+		<put-attribute name="title" value="Recharge History" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/rechargeHistory.jsp" />
+	</definition>
+
+
+	<definition name="changepasswordcustomer" extends="baseLayout">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/changepasswordcustomer.jsp" />
+	</definition>
+
+	<definition name="refundRequestCust" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/refundRequest.jsp" />
+	</definition>
+
+	<definition name="refundReportCust" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/refundReport.jsp" />
+	</definition>
+
+	<definition name="customerSuccessPage" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/successPage.jsp" />
+	</definition>
+
+	<definition name="refundDetailsCust" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/refundDetails.jsp" />
+	</definition>
+
+	<definition name="customerCommissionDetails" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/customerCommissionDetails.jsp" />
+	</definition>
+
+	<definition name="printTransacionReceipt" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/transactionDetails.jsp" />
+	</definition>
+	<definition name="transacionReceipt" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/printTidReceipt.jsp" />
+	</definition>
+	<definition name="searchTransaction" extends="baseLayout">
+		<put-attribute name="title" value="Refund Request" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/customer/menucustomer.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/searchtransaction.jsp" />
+	</definition>
+</tiles-definitions>

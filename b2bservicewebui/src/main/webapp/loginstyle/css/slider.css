@@ -1,0 +1,272 @@
+/* === Some Important Changes, Do not Edit == */
+a.error_icon{
+	background:url('../img/warning.png') no-repeat left top;
+	width: 8px;
+	width: 12px\0/;
+	height: 12px;
+	display: block;
+	margin: -26px 5px;
+	opacity: 1;
+}
+
+input.error_input{
+	padding: 10px 0 6px 24px;
+	width: 90%;
+	border: 1px solid #de5a49;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.disabled{
+	box-shadow: inset 0 1px 5px #333;
+}
+/* === END CHANGES == */
+.slidercontainer{
+	background: transparent;
+	display: block;
+	float: left;
+	margin: 10px 0 0; 
+	padding: 0;
+	height: 318px;
+	color: #FFF;
+}
+
+.carousel-inner .item img{
+	max-width: none; /* Important for Allignment purpose */
+}
+
+.background_image{
+	position: relative;
+}
+
+.static_content,
+.slide_caption{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.slider{
+   position: relative;
+}
+
+.slider ul{
+	list-style: none;
+}
+
+.slider h1{
+	font-size: 32px;
+}
+
+.slider .static{
+	font-weight: 110;
+	font-size: 13px;
+}
+
+.slider .static h1{
+	font-size: 24px;
+	font-weight: 400;
+	text-shadow: 0 1px 0 #444;
+}
+
+.slider .static h3{
+	font-size: 16px;
+	font-weight: 200;
+	text-shadow: 0 1px 0 #444;
+}
+
+.left_prev,.right_next{
+	text-indent: -9999px;
+	background: url('../img/slide_arrows.png') no-repeat left top;
+	width: 11px;
+	height: 16px;
+	border: none;
+	opacity: 1;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	opacity: 0.4;
+}
+
+.left_prev{
+	float: left;
+	left: 10px;
+}
+
+.right_next{
+	left: 100%;
+	margin-left: -20px;
+	background-position: 0 -17px;
+}
+
+.slide_caption{
+ width: 90%;
+}
+
+.slide_title,.slide_content,.slide_action{
+	position: absolute;
+	opacity: 0;
+}
+
+/*==== slides CSS EDIT YOUR CSS HERE ====*/
+
+.slide1 .slide_caption{
+	padding: 20px;
+}
+
+.slide1 .slide_title{
+	background: #444;
+	color: #FFF;
+	padding: 8px 14px;
+	top: 20px;
+	left: 80px;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.slide1 .slide_content{
+	background: #777;
+	color: #FEFEFE;
+	padding: 5px 10px;
+	top: 80px;
+	width: 50%;
+	left: 80px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.slide1 .slide_action{
+	top : 160px;
+	left: 80px;
+}
+
+
+.slide2 .slide_title{
+	background: #444;
+	color: #FFF;
+	padding: 8px 14px;
+	top: 20px;
+	left: 80px;
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.slide2 .slide_content{
+	background: #777;
+	color: #FEFEFE;
+	padding: 5px 10px;
+	top: 80px;
+	width: 50%;
+	left: 80px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.slide2 .slide_action{
+	top : 170px;
+	left: 80px;
+}
+
+
+@media (max-width: 767px) {
+
+.slidercontainer{
+	background: transparent;/*e6e2dd*/
+	display: block;
+	float: none;
+	margin: 10px 0 0; 
+	padding: 0;
+	height: auto;
+	color: #FFF;
+}
+}
+
+@media (max-width: 480px) { 
+	
+	.slide1 .slide_title,
+	.slide2 .slide_title{
+		top: 0px;
+		left: 40px;
+		font-size: 18px;
+	}
+	
+	.slide1 .slide_content,
+	.slide2 .slide_content{
+		top: 60px;
+		left: 40px;
+		width: 70%;
+	}
+	
+	.slide1 .slide_action{
+		top : 135px;
+		left: 40px;
+	}
+        .slide2 .slide_action{
+               top : 155px;
+		left: 40px;
+        }
+
+	
+}
+
+/* ====== VibeOptions ====== */
+
+#vibeoptions{
+	position: fixed;
+	top: 10%;
+	right: 0;
+	width: 200px;
+	height: auto;
+	display: block;
+	background: #f9f9f9;
+	border: 1px solid #EFEFEF;
+	text-align: center;
+	z-index: 99999;
+        padding-bottom:10px;
+}
+
+#vibeoptions_text{
+	background:url('../img/options_clickhere.png') no-repeat left top;
+	display: block;
+	width: 148px;
+	height: 44px;
+	margin-left: -192px;
+	margin-top: -10px;
+}
+#vibeoptions .vibe_active{
+	border: 2px solid #0db4e4;
+	margin: 3px;
+}
+
+#vibeoptions .vibe_active.last {
+	margin: 4px 3px !important;
+}
+#vibeoptions #vibeoptionsopener{
+	margin-left: -32px;
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url('../img/options_icon.png') no-repeat left top;
+	float: left;
+
+}
+#vibeoptions h4{
+	clear: both;
+	margin: 10px;
+}
+#coloroptions{
+	margin: 10px;
+	padding: 10px;
+	list-style:none;
+}
+
+#coloroptions li,
+#backgroundoptions li{
+	width: 30px;
+	height: 20px;
+	margin: 5px 3px 5px 5px;
+	float: left;
+	display: block;
+	border: 1px solid #efefef;
+	text-indent: -9999px;
+}

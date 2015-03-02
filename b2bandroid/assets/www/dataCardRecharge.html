@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/b2b/dataCardRecharge.js"></script>
+<script type="text/javascript" src="js/phonegap/cordova-2.7.0.js"></script>
+<script type="text/javascript" src="js/b2b/b2bcommon.js"></script>
+<title>Data Card Recharge</title>
+</head>
+<body onload="setCurrentBalance()" class="body">
+	<script type="text/javascript">
+		document.addEventListener("deviceready", pageLoading, false);
+		function dthRechargeForm() {
+			var validated = (contactVali() && confirmation());
+			if (validated) {
+				doDataCardRecharge();
+
+			}
+			return false;
+		}
+		function contactVali() {
+
+			var connection = document.getElementById("connectionid").value;
+			var amt = document.getElementById("amount").value;
+			if (isNaN(connection)) {
+				alert("pls enter valid Connection id");
+				document.getElementById("connectionid").focus();
+				return false;
+			}
+
+			if (isNaN(amt)) {
+				alert("pls enter a Number in  Amount");
+				document.getElementById("amount").focus();
+				return false;
+			}
+			return true;
+
+		}
+		function confirmation() {
+
+			var operator = document.getElementById("operator").value;
+			var datacardNo = document.getElementById("connectionid").value;
+			var amount = document.getElementById("amount").value;
+			var con = confirm("Are you sure you want to recharge Datacard card as\n\nOperator Name: "
+					+ operator
+					+ "\n\nData Card No: "
+					+ datacardNo
+					+ "\n\nAmount: " + amount);
+			if (con == true) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+
+	<div id="main_container">
+		<div class="header">
+			<a href="menu.html" class="left_bt">Home</a> <span>Data Card
+				Recharge</span>
+		</div>
+		<div class="form_row">
+			<font color="black"> <label>Current Balance:</label> <input
+				id="currentBalance" readonly class="form_input_box" type="text" />
+			</font>
+		</div>
+		<div class="content">
+			<form id="datacardrecharge" onSubmit="return dthRechargeForm();"
+				action="" method="post">
+				<div class="form_row">
+					<label>Operator</label> <select id="operator" class="form_select"
+						name="operator">
+						<option value="Reliance NetConnect 3G">Reliance
+							NetConnect 3G</option>
+						<option value="Reliance NetConnect+">Reliance NetConnect+</option>
+						<option value="Reliance NetConnect">Reliance NetConnect</option>
+						<option value="MTS MBlaze">MTS MBlaze</option>
+						<option value="MTS MBrowse">MTS MBrowse</option>
+						<option value="Tata Photon+">Tata Photon+</option>
+						<option value="Tata Photon Whiz">Tata Photon Whiz</option>
+						<option value="Vodafone 3G">Vodafone 3G</option>
+						<option value="Aircel Pocket Internet">Aircel Pocket
+							Internet</option>
+						<option value="BSNL">BSNL</option>
+					</select>
+				</div>
+				<div class="form_row">
+					<label>Data Card Number</label> <input id="connectionid"
+						name="connectionid" class="form_input_box" required="required"
+						type="text" value="" />
+				</div>
+				<div class="form_row">
+					<label>Amount (Rs.)</label> <input id="amount" name="amount"
+						class="form_input_box" required="required" type="text" value="" />
+				</div>
+		</div>
+
+		<input type="submit" required="required" class="form_submit"
+			value="Recharge" />
+
+		</form>
+
+
+	</div>
+	</div>
+
+</body>
+</html>
